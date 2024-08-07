@@ -1,0 +1,9 @@
+{
+  "name": "stephan-smith-solutions",
+  "dependencies": {
+    "servdir": "^0.0.3"
+  },
+  "scripts": {
+    "start": "jekyll serve"
+  }
+}
