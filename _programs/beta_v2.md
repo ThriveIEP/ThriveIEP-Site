@@ -2,10 +2,10 @@
 title: Beta Program (v2)
 subtitle: Feedback on our v2 release and Ai IEP evaluator and chat expert.
 layout: default
-published: true
+published: false
 date: 2024-6-10 00:00:00
 order: 2
-sitemap: true   
+sitemap: false   
 status: 'pending'
 stage: 'early'
 logo: '/programs/assets/unfurl-logo.png'

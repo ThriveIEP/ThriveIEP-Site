@@ -2,10 +2,10 @@
 title: Beta Program (v3)
 subtitle: Feedback on our v2 release and neuroreport visualization.
 layout: default
-published: true
+published: false
 date: 2024-6-10 00:00:00
 order: 3
-sitemap: true   
+sitemap: false   
 status: 'pending'
 stage: 'early'
 logo: '/programs/assets/unfurl-logo.png'
