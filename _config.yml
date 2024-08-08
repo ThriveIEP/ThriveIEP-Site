@@ -25,11 +25,6 @@ collections:
     permalink: /programs/:path/
     sort_by: order
 
-  packages:
-    output: true
-    permalink: /packages/:path/
-    sort_by: order
-
 # Markdown settings
 markdown: kramdown
 
