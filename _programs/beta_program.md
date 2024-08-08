@@ -61,7 +61,7 @@ stage: 'early'
        get started. If you know someone who might be a good candidate,
        please share this page.
     </p>
-    <a href="https://chat.productdialog.com/c124f341-93a1-4525-bdc1-5f59b72d5fab" target="_blank" class="btn btn-success btn-lg w-100">Apply to Beta Program
+    <a href="https://bit.ly/3YDDvG7" target="_blank" class="btn btn-success btn-lg w-100">Apply to Beta Program
     </a>
 </div>
 
