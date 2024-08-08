@@ -34,7 +34,7 @@ stage: 'early'
     </li>
     <li>
         Have concerns about how well you are using the information in the IEP or
-        neurologic report.
+        Neuropsych report.
     </li>
 </ul>
 
