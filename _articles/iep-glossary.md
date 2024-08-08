@@ -1,13 +1,13 @@
 ---
-title:  The Ai Big Bang
-subtitle: Too much, too fast, that's the current state of Ai tooling.
+title:  An IEP Glossary
+subtitle: Terms count. These are the terms you need to know and understand.
 layout: default
-published: true
+published: false
 date: 2024-05-26 00:00:00
 order: 1
 sitemap: false
 ---
-
+    
 {% include subStyles.css %}
 
 <img src="/articles/assets/ai-big-bang-banner.png" class="img-fluid img-thumbnail">

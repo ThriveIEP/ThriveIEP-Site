@@ -1,11 +1,11 @@
 ---
-title:  A Better LinkedIn
-subtitle: Imagine if LinkedIn was not just focused on recruiters. This program is working on network signals and AI to enhance networking.
+title: Beta Program
+subtitle: Call for early adaptors!
 layout: default
 published: true
 date: 2024-6-10 00:00:00
 order: 3
-sitemap: false
+sitemap: true   
 status: 'pending'
 stage: 'early'
 logo: '/programs/assets/unfurl-logo.png'
