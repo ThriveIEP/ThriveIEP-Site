@@ -8,9 +8,8 @@ order: 1
 sitemap: true   
 status: 'pending'
 stage: 'early'
-logo: '/programs/assets/unfurl-logo.png'
-
 ---
+
 
 {% include subStyles.css %}
 
@@ -52,26 +51,22 @@ logo: '/programs/assets/unfurl-logo.png'
 </p>
 
 <p>
-    We will ask for zoom meetings, feedback and as our Ai tools
+    We will ask for Zoom meetings, feedback and as our Ai tools
     reach pre-release state, you will be asked to share our IEP.
 </p>
 
-<div class="mt-2 mb-5 tech-note">
+<div class="mt-2 mb-5 alert alert-success">
     <p>
        If this program is of interest, please use this application to 
        get started. If you know someone who might be a good candidate,
        please share this page.
     </p>
-    <br>
-    <a href="https://chat.productdialog.com/c124f341-93a1-4525-bdc1-5f59b72d5fab" 
-      target="_blank"
-      class="btn btn-success">
-      Apply to Beta Program 
+    <a href="https://chat.productdialog.com/c124f341-93a1-4525-bdc1-5f59b72d5fab" target="_blank" class="btn btn-success btn-lg w-100">    Apply to Beta Program
     </a>
 </div>
 
 <div class="row">
-    <div class="col-4">
+    <div class="col-md-4">
         <h5>
             Program Capacity
         </h5>
@@ -84,11 +79,10 @@ logo: '/programs/assets/unfurl-logo.png'
             We will add slots as we scale up.
         </p>
     </div>
-    <div class="col-4">
+    <div class="col-md-4">
         <h5>
             Your Data & Privacy
         </h5>
-
         <p>
             We treat your feedback and your child's IEPs with the same
             approach that your doctor handles your medical data. Its HIPAA
@@ -97,9 +91,7 @@ logo: '/programs/assets/unfurl-logo.png'
         </p>
 
     </div>
-    <div class="col-4">
-
-
+    <div class="col-md-4">
         <h5>
             Timeframe
         </h5>
@@ -108,7 +100,6 @@ logo: '/programs/assets/unfurl-logo.png'
             surveys will help us build a programmatic understanding of your current
             state, your child and your experiences.
         </p>
-
         <p>
             We will include you in our beta program newsletter and will share
             a timeline of feedback points.
@@ -116,12 +107,5 @@ logo: '/programs/assets/unfurl-logo.png'
 
     </div>
 </div>
-
-
-
-
-<hr>
-
-
 
 <!-- {% include articleFooter.html %} -->
