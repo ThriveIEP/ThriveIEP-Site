@@ -42,7 +42,7 @@ logo: '/programs/assets/unfurl-logo.png'
 <hr>
 
 <h3>
-    What can I expect?
+    What to expect?
 </h3>
 
 <p>
@@ -69,8 +69,6 @@ logo: '/programs/assets/unfurl-logo.png'
       Apply to Beta Program 
     </a>
 </div>
-
-<hr>
 
 <div class="row">
     <div class="col-4">
