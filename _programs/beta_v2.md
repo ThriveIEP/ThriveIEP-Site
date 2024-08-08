@@ -1,10 +1,10 @@
 ---
-title: Beta Program
-subtitle: Call for early adaptors! We are looking for families who can help us test and eval our early AI tools.
+title: Beta Program (v2)
+subtitle: Feedback on our v2 release and Ai IEP evaluator and chat expert.
 layout: default
 published: true
 date: 2024-6-10 00:00:00
-order: 1
+order: 2
 sitemap: true   
 status: 'pending'
 stage: 'early'

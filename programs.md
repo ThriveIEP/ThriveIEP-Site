@@ -11,17 +11,13 @@ sitemap: false
 {% assign programs = site.programs %}
 {% for article in programs %}
   <div class="row">
-    <div class="col-2">
-      <a href="{{ article.url }}">
-        <img src="{{ article.logo}}" class="img-fluid img-thumbnail">
-      </a>
-    </div>
+ 
     <div class="col-4">
       <h4>
         {{ article.title }}
       </h4>
-      <span class="badge bg-success">Status: {{ article.status}}</span>
-      <span class="badge bg-success">Stage: {{ article.stage}}</span>
+      <!-- <span class="badge bg-success">Status: {{ article.status}}</span>
+      <span class="badge bg-success">Stage: {{ article.stage}}</span> -->
     </div>
     <div class="col-6">
       {{ article.subtitle }}

@@ -1,10 +1,10 @@
 ---
-title: Beta Program
-subtitle: Call for early adaptors! We are looking for families who can help us test and eval our early AI tools.
+title: Beta Program (v3)
+subtitle: Feedback on our v2 release and neuroreport visualization.
 layout: default
 published: true
 date: 2024-6-10 00:00:00
-order: 1
+order: 3
 sitemap: true   
 status: 'pending'
 stage: 'early'
