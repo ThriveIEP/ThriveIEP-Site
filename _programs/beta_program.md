@@ -1,6 +1,6 @@
 ---
 title: Beta Program
-subtitle: Call for early adaptors! We are looking for families who can help us test and eval our early AI tools.
+subtitle: Call for early adopters! We are looking for families who can help us test and eval our early AI tools.
 layout: default
 published: true
 date: 2024-6-10 00:00:00
