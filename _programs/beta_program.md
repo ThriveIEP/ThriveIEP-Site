@@ -17,7 +17,7 @@ stage: 'early'
     Who is a good fit?
 </h3>
 <p>
-    We are looking for parents who have some experience with IEPs.
+    We are looking for parents who have experience with IEPs.
     Below are some questions you might consider if you would like
     to be part of this stage of our IEP journey.
 </p>
@@ -52,16 +52,16 @@ stage: 'early'
 
 <p>
     We will ask for Zoom meetings, feedback and as our Ai tools
-    reach pre-release state, you will be asked to share our IEP.
+    reach pre-release state, you will be asked to share your IEP reports.
 </p>
 
 <div class="mt-2 mb-5 alert alert-success">
     <p>
-       If this program is of interest, please use this application to 
+       If this program is of interest, please use this application to
        get started. If you know someone who might be a good candidate,
        please share this page.
     </p>
-    <a href="https://chat.productdialog.com/c124f341-93a1-4525-bdc1-5f59b72d5fab" target="_blank" class="btn btn-success btn-lg w-100">    Apply to Beta Program
+    <a href="https://chat.productdialog.com/c124f341-93a1-4525-bdc1-5f59b72d5fab" target="_blank" class="btn btn-success btn-lg w-100">Apply to Beta Program
     </a>
 </div>
 
@@ -85,8 +85,8 @@ stage: 'early'
         </h5>
         <p>
             We treat your feedback and your child's IEPs with the same
-            approach that your doctor handles your medical data. Its HIPAA
-            data. Expect to be asked to consent. Expect to have use protect
+            sensitivity that your doctor handles your medical data, as HIPAA
+            data. Expect to be asked for consent. Expect to have us protect
             your data, and expect to have control of how and when it is used.
         </p>
 
@@ -107,5 +107,3 @@ stage: 'early'
 
     </div>
 </div>
-
-<!-- {% include articleFooter.html %} -->
