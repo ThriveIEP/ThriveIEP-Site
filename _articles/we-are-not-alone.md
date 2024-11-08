@@ -1,6 +1,6 @@
 ---
 title: We are not alone
-subtitle: 
+subtitle: This special education journey? We're walking it too.
 layout: default
 published: true
 date: 2024-11-1 00:00:00
@@ -9,8 +9,6 @@ sitemap: true
 ---
 
 {% include subStyles.css %}
-
-We are not alone.
 
 This is my second time around with the special education system. I know so much more. It’s a different kid with a different profile. I’m a different advocate.
 
