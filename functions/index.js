@@ -52,6 +52,9 @@ exports.register = functions.https.onRequest(async (req, res) => {
 
       const contact = await createContact(email, firstname, lastname);
  
+      // Trigger HubSpot Workflow
+      await enrollContactInWorkflow(contact.id, '1621084847');
+
       return res.status(200).json({ status: 'success', message: "Contact created", contactId: contact.id });
     } catch (error) {
       console.error("Error validating email in HubSpot:", error.message);
@@ -101,5 +104,14 @@ const createContact = async (email, firstname, lastname) => {
   } catch(error) {
     console.error('Error creating contact:', error);
     throw error;
+  }
+}
+
+async function enrollContactInWorkflow(contactId, workflowId) {
+  try {
+    await hubspot.automation.workflowsApi.enrollContact(workflowId, contactId);
+    return { success: true };
+  } catch (error) {
+    console.error('Failed to enroll contact:', error);
   }
 }
