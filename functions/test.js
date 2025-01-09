@@ -1,6 +1,6 @@
 
 const Hubspot = require('@hubspot/api-client');
-const hubspot = new Hubspot.Client({ accessToken: "pat-na1-3398662e-7113-4ba3-85cb-c8e02a21c335" });
+const hubspot = new Hubspot.Client({ accessToken: "" });
 
 const main = async () => {
   const email = "stephan.smith.kbc93@gmail.com";
