@@ -22,7 +22,7 @@ const HUBSPOT_API_BASE_URL = "https://api.hubapi.com/crm/v3/objects/contacts";
 
 // Create a CORS-enabled function
 const corsOptions = {
-  origin: ['http://localhost:4000', 'http://127.0.0.1:4000', 'https://app.thriveIEP.com'], // Allow both localhost and app.thriveIEP.com
+  origin: ['http://localhost:4000', 'http://127.0.0.1:4000', 'https://app.thriveiep.com'], // Allow both localhost and app.thriveIEP.com
 };
 
 exports.register = functions.https.onRequest(async (req, res) => {
@@ -52,8 +52,9 @@ exports.register = functions.https.onRequest(async (req, res) => {
 
       const contact = await createContact(email, firstname, lastname);
  
-      // Trigger HubSpot Workflow
-      await enrollContactInWorkflow(contact.id, '1621084847');
+      // Trigger HubSpot Workflow 
+      // Preivous: 47888404 - this was the portal Id not the workflow.
+      await enrollContactInWorkflow(contact.id, '1621623448');
 
       return res.status(200).json({ status: 'success', message: "Contact created", contactId: contact.id });
     } catch (error) {
@@ -94,7 +95,8 @@ const createContact = async (email, firstname, lastname) => {
       properties: {
         email,
         firstname,
-        lastname
+        lastname,
+        start_workflow: 'Start'
       },
     };
     
