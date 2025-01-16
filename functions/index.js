@@ -38,7 +38,7 @@ exports.register = functions.https.onRequest(async (req, res) => {
       }
 
       // Extract email from the request body
-      const { email, firstname, lastname } = req.body;
+      const { email, firstname, lastname, package } = req.body;
       if (!email) {
         return res.status(400).json({ status: 'failed', message: "Email is required" });
       }
@@ -50,11 +50,15 @@ exports.register = functions.https.onRequest(async (req, res) => {
         return res.status(200).json({ status: 'failed', message: "Email already exists" });
       }
 
-      const contact = await createContact(email, firstname, lastname);
+      const contact = await createContact(email, firstname, lastname, package);
  
+      console.log('Created Contact:', contact, { email, firstname, lastname, package });
+
+      const workflowId = '1621623448';
       // Trigger HubSpot Workflow 
-      // Preivous: 47888404 - this was the portal Id not the workflow.
-      await enrollContactInWorkflow(contact.id, '1621623448');
+      await enrollContactInWorkflow(contact.id, workflowId);
+
+      console.log(`Enrolled Contact ${contact.id} in Workflow ${workflowId}`);
 
       return res.status(200).json({ status: 'success', message: "Contact created", contactId: contact.id });
     } catch (error) {
@@ -89,13 +93,15 @@ async function doesContactExist(email) {
 }
 
 
-const createContact = async (email, firstname, lastname) => {
+const createContact = async (email, firstname, lastname, package) => {
   try {
     const contactObj = {
       properties: {
         email,
         firstname,
         lastname,
+        // Contact Property to hold the package selected.
+        registration_package: package || 'free',
         start_workflow: 'Start'
       },
     };
