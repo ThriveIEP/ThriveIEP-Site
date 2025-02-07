@@ -34,31 +34,34 @@ exports.register = functions.https.onRequest(async (req, res) => {
     try {
       // Validate the request method
       if (req.method !== "POST") {
+        logger.warn('Request method is not POST');
         return res.status(405).json({ status: 'failed', message: "Only POST requests are allowed" });
       }
 
       // Extract email from the request body
       const { email, firstname, lastname, package } = req.body;
       if (!email) {
+        logger.warn('Email is missing from request body');
         return res.status(400).json({ status: 'failed', message: "Email is required" });
       }
+
+      logger.info('Body:', JSON.stringify(req.body));
 
       // Call to see if we have a contact with this email.
       const contactExists = await doesContactExist(email);
 
       if (contactExists) {
+        logger.warn(`Email: ${email} is already registered. Stopping registration process.`);
         return res.status(200).json({ status: 'failed', message: "Email already exists" });
       }
 
       const contact = await createContact(email, firstname, lastname, package);
- 
-      console.log('Created Contact:', contact, { email, firstname, lastname, package });
+      logger.info(`Created Contact: ${JSON.stringify(contact)}`);
 
       const workflowId = '1621623448';
       // Trigger HubSpot Workflow 
       await enrollContactInWorkflow(contact.id, workflowId);
-
-      console.log(`Enrolled Contact ${contact.id} in Workflow ${workflowId}`);
+      logger.info(`Enrolled Contact ${contact.id} in Workflow ${workflowId}`);
 
       return res.status(200).json({ status: 'success', message: "Contact created", contactId: contact.id });
     } catch (error) {
@@ -117,7 +120,13 @@ const createContact = async (email, firstname, lastname, package) => {
 
 async function enrollContactInWorkflow(contactId, workflowId) {
   try {
-    await hubspot.automation.workflowsApi.enrollContact(workflowId, contactId);
+    await hubspot.automation.workflowsApi.createWorkflowEnrollment({
+      enrollmentRequest: {
+        objectId: contactId,
+      },
+      workflowId: workflowId,
+    });
+    
     return { success: true };
   } catch (error) {
     console.error('Failed to enroll contact:', error);
