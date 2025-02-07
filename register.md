@@ -108,6 +108,14 @@ sitemap: true
 
       <button type="submit" class="btn btn-block w-100 btn-primary">Sign Up</button>
       <div id="result"></div>
+
+      <br>
+      <center>
+      <small>
+        <a href="https://app.termly.io/policy-viewer/policy.html?policyUUID=85b66a4f-a7cc-4d07-87ac-b3a2110c84e4">Privacy Policy</a> | 
+        <a href="https://app.termly.io/policy-viewer/policy.html?policyUUID=50e7bb89-8a3f-4be8-9565-58be1ef50262">Terms of Use</a> | <a href="https://app.termly.io/policy-viewer/policy.html?policyUUID=c908869e-2f34-44d2-9dc3-063457a4d225">Cookie Policy</a> 
+      </small>
+      </center>
     </form>
 
     <script>
