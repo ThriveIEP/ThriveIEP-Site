@@ -206,7 +206,7 @@ sitemap: true
               resultDiv.innerText = 'Success! Your account is set up. You will receive an email with a link to start the onboarding process.';
               
               // Redirect to the success page
-              window.location.href = 'https://scratch.thriveIEP.com/success';
+              window.location.href = 'https://thriveIEP.com/success';
             } else {
               // Handle error case
               resultDiv.className = 'error'; // Set class to error

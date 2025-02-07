@@ -120,13 +120,15 @@ const createContact = async (email, firstname, lastname, package) => {
 
 async function enrollContactInWorkflow(contactId, workflowId) {
   try {
+    logger.info(`Enrolling Contact ${contactId} in Workflow ${workflowId}`);
+    
     await hubspot.automation.workflowsApi.createWorkflowEnrollment({
       enrollmentRequest: {
         objectId: contactId,
       },
       workflowId: workflowId,
     });
-    
+
     return { success: true };
   } catch (error) {
     console.error('Failed to enroll contact:', error);
