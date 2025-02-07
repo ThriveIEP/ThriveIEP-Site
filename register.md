@@ -64,22 +64,27 @@ sitemap: true
   <div class="col-12">
 
     <h3>
-      Welcome to the ThriveIEP program. To get started, please fill out the form below.
-      You will receive a welcome email, and custom link to our IEP onboarding process.
+      Welcome to ThriveIEP!
     </h3>
 
     <small>
-      FYI, our onboarding will walk you through the legal consent process, pricing 
-      and family set up process. Please use the form below to provide the primary
-      or initial contact for your family. Do not use a minors email address.
+      We’re glad you’re here. Let’s get you set up.
+      <br>
+      <br>
+      <b>Step 1:</b> Share your contact info so we know who to reach out to.
+      <br>
+      <b>Step 2:</b> Confirm the plan that fits your needs.
+      <br>
+      <br>
+      <b>Quick Note:</b> Please use your own contact info, not your child’s.
+      <br>
     </small>
 
-    <br>
     <br>
 
     <form id="signupForm" action="your-server-endpoint" method="POST" class="form-group">
       <div class="mb-3">
-        <label for="email" class="form-label">Enter your Email:</label>
+        <label for="email" class="form-label">Email:</label>
         <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
       </div>
       <div class="mb-3">
@@ -91,11 +96,11 @@ sitemap: true
         <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Enter your last name" required />
       </div>
       <div class="mb-3">
-        <label for="package" class="form-label">Desired Package:</label>
+        <label for="package" class="form-label">Choose your Plan:</label>
         <select name="package" id="package" class="form-control" required>
-          <option value="free">I want the Free Package.</option>
-          <option value="basic">I want the Basic Package</option>
-          <option value="emergency">I want the Emergency Package</option>
+          <option value="free">I'm Just Learning</option>
+          <option value="basic">Help Me Navigate</option>
+          <option value="emergency">Emergency Plan</option>
         </select>
       </div>
 
