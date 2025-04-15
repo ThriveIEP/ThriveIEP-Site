@@ -172,7 +172,9 @@ sitemap: true
       document.getElementById('signupForm').addEventListener('submit', async function (e) {
         e.preventDefault();
 
-        const url = 'https://us-central1-thriveiep-25701.cloudfunctions.net/register';
+        <!-- const url = 'https://us-central1-thriveiep-25701.cloudfunctions.net/register'; -->
+        const url = 'https://us-central1-thrieveiep.cloudfunctions.net/register';
+
         const email = this.email.value;
         const firstname = this.firstname.value;
         const lastname = this.lastname.value;
